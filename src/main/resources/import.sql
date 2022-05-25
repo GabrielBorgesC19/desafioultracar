@@ -1,0 +1,1 @@
+INSERT INTO cliente(endereco, nome) values ('ultracar', 'fabio');
