@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.entities;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -9,13 +9,17 @@ import javax.persistence.Table;
 
 
 @Entity
-@Table (name = "funcionario")
-public class Funcionario {
+@Table (name = "meta")
+public class Meta {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	private String nome;
+	
+	
+	private Double metaFaturamento;
+	private Integer novosClientes;
+	
 	
 	@ManyToOne(optional = true)
 	private Empresa empresa;
